@@ -16,6 +16,7 @@ defaults:
     values:
       layout: "post"
 
-# social_media:
-  # linkedin: developeranubha
-  # twitter: AnubhaKushwaha1
+social_media:
+  linkedin: developeranubha
+  twitter: AnubhaKushwaha1
+  leetcode: anubhakushwaha
