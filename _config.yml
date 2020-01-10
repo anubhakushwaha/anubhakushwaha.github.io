@@ -11,10 +11,19 @@ permalink: /:year/:month/:day/:title/
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "_slides"
+    values:
+      layout: "iframe"
+
+collections:
+  slides:
+    output: true
 
 social_media:
   linkedin: developeranubha
