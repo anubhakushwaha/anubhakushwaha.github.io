@@ -1,3 +1,29 @@
+.container {
+	float: right;
+	margin: 10px;
+}
+#main{
+position:absolute;
+width:450px;
+height:240px;
+border:1px solid black;
+padding:10px;
+}
+#main > div{
+float:right;
+margin:10px;
+}
+#d1{
+width:200px;
+height:200px;
+border:1px solid red;
+}
+
+#d2{
+width:200px;
+height:200px;
+border:1px solid blue;
+}
 html {
 	background-color: #F3F5F6;
 	color: #000;
@@ -27,6 +53,9 @@ nav {
 	cursor: pointer;
 	background-repeat: no-repeat;
 	transition: opacity 150ms ease-in-out 0s;
+}
+.img-with-text {
+    text-align: center;
 }
 .main-slides {
 	margin-top: 100px;
