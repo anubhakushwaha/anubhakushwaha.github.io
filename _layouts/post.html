@@ -64,7 +64,7 @@
             {% endfor %}
             <p class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %} mb-5">Published {{ page.date | date: "%b %d, %Y"}}
             </p>
-            {{ post_body }}
+            <div style="padding-left: 1.5%; padding-right: 1.5%"> {{ post_body }}</div>
           </div>
         </div>
       </div>
