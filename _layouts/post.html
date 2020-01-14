@@ -40,6 +40,9 @@
     <div class="container-md f4 text-left border rounded-2 bg-white p-3 p-sm-5 mt-6">
       <p class="f5"><a href="/" class="d-flex flex-items-center">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:#0366d6 aria-label:Home %}Home</a></p>
       <h1 class="f00-light lh-condensed">{{ page.title }}</h1>
+      {% for category in page.categories %}
+        <span title="Category" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">{{ category }}</span>
+      {% endfor %}
       <p class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %} mb-5">Published {{ page.date | date: "%b %d, %Y"}}</p>
       {{ post_body }}
     </div>
